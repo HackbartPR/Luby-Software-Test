@@ -1,0 +1,56 @@
+// ==========================================================================
+// FUNCTIONS
+// ==========================================================================
+
+@import '../sass/abstracts/functions';
+
+// ==========================================================================
+// ABSTRACT
+// ==========================================================================
+
+@import '../sass/abstracts/global';
+@import '../sass/abstracts/variables';
+
+
+:root{
+    //CORES
+    @each $name, $color in $application-color{
+        --color-#{$name}: #{$color};
+    }
+    //MEDIDAS
+    @each $name, $value in $application-metrics{
+        --global-#{$name}: #{$value};
+    }
+    //FORÇA FONTE
+    @each $name, $value in $application-font-weight{
+        --font-#{$name}: #{$value};
+    }
+    //TAMANHO FONTE
+    @each $name, $value in $application-font-size{
+        --font-#{$name}: #{$value};
+    }
+    //FAMILIA FONTE
+    @each $name, $value in $application-font-family{
+        --font-#{$name}: #{$value};
+    }
+}
+
+// ==========================================================================
+// LAYOUTS
+// ==========================================================================
+@import '../sass/layouts/l-login';
+@import '../sass/layouts/l-home';
+@import '../sass/layouts/l-my-vehicles';
+@import '../sass/layouts/l-all-vehicles';
+@import '../sass/layouts/l-all-employees';
+
+
+// ==========================================================================
+// COMPONENTS
+// ==========================================================================
+@import '../sass/components/c-login';
+@import '../sass/components/c-image-home';
+@import '../sass/components/c-header';
+@import '../sass/components/c-articles';
+@import '../sass/components/c-worksheet';
+@import '../sass/components/c-worksheet-employees';

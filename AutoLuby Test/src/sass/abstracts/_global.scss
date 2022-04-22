@@ -1,0 +1,23 @@
+/* ========================================================================== */
+/* GLOBAL CONFIG */
+/* ========================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body{
+    font-family: var(--font-poppins), sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none !important;
+}

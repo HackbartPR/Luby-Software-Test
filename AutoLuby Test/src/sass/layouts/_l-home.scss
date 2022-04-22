@@ -1,0 +1,49 @@
+/* ========================================================================== */
+/* LAYOUT HOME */
+/* ========================================================================== */
+
+$layout-name: "l-home";
+
+.#{$layout-name}{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    gap: rem(65);
+
+    align-items: center;
+
+    &__main{
+        width: rem(800);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap:rem(20);    
+
+        &__welcome{
+            align-self: flex-start;
+            margin-bottom: rem(10);
+
+            &__title{
+                font-weight: var(--font-600);
+                font-size: var(--font-30);
+
+                color: var(--color-dark-gray);
+            }
+
+            &__text{
+                font-weight: var(--font-500);
+                font-size: var(--font-18);
+
+                color: var(--color-gray);
+            }
+        }
+        
+    }
+}

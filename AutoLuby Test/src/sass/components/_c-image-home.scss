@@ -1,0 +1,25 @@
+/* ========================================================================== */
+/* LAYOUT HOME ==>> HOME IMAGE */
+/* ========================================================================== */
+
+$component-name: "c-image-home";
+
+.#{$component-name}{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    &__img{
+        display: block;
+        width: 100%;
+        min-height: auto;
+        object-fit: cover;
+    }
+
+}

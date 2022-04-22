@@ -1,0 +1,1188 @@
+/* ========================================================================== */
+/* GLOBAL CONFIG */
+/* ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-light-gray: #A2A2A2;
+  --color-gray: #7C7C7C;
+  --color-dark-gray: #3C3C3C;
+  --color-background: #E5E5E5;
+  --color-primary-red: #F54A48;
+  --color-secundary-red: #DF3938;
+  --color-stroke: #E6E6E6;
+  --color-green: #34C38F;
+  --color-yellow: #FA982F;
+  --color-input: #F9F9F9;
+  --color-nav-background: #EDEDED;
+  --color-nav-text: #858585;
+  --global-border-radius: 0.1875rem;
+  --font-300: 300;
+  --font-400: 400;
+  --font-500: 500;
+  --font-600: 600;
+  --font-700: 700;
+  --font-11: 0.6875rem;
+  --font-12: 0.75rem;
+  --font-13: 0.8125rem;
+  --font-14: 0.875rem;
+  --font-16: 1rem;
+  --font-18: 1.125rem;
+  --font-20: 1.25rem;
+  --font-24: 1.5rem;
+  --font-26: 1.625rem;
+  --font-30: 1.875rem;
+  --font-32: 2rem;
+  --font-36: 2.25rem;
+  --font-38: 2.375rem;
+  --font-poppins: Poppins;
+}
+
+/* ========================================================================== */
+/* LAYOUT LOGIN */
+/* ========================================================================== */
+.l-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ========================================================================== */
+/* LAYOUT HOME */
+/* ========================================================================== */
+.l-home {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.0625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-home__main {
+  width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+
+.l-home__main__welcome {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 0.625rem;
+}
+
+.l-home__main__welcome__title {
+  font-weight: var(--font-600);
+  font-size: var(--font-30);
+  color: var(--color-dark-gray);
+}
+
+.l-home__main__welcome__text {
+  font-weight: var(--font-500);
+  font-size: var(--font-18);
+  color: var(--color-gray);
+}
+
+/* ========================================================================== */
+/* LAYOUT MY  VEHICLES */
+/* ========================================================================== */
+.l-my-vehicles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.l-my-vehicles__main {
+  padding: 2.9375rem 9.375rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.l-my-vehicles__main__title {
+  font-weight: var(--font-600);
+  font-size: var(--font-30);
+  color: var(--color-dark-gray);
+}
+
+/* ========================================================================== */
+/* LAYOUT ALL VEHICLES */
+/* ========================================================================== */
+.l-all-vehicles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.l-all-vehicles__main {
+  padding: 2.9375rem 9.375rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.l-all-vehicles__main__title {
+  font-weight: var(--font-600);
+  font-size: var(--font-30);
+  color: var(--color-dark-gray);
+}
+
+/* ========================================================================== */
+/* LAYOUT ALL EMPLOYEES */
+/* ========================================================================== */
+.l-all-employees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.l-all-employees__main {
+  padding: 2.9375rem 9.375rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.l-all-employees__main__title {
+  font-weight: var(--font-600);
+  font-size: var(--font-30);
+  color: var(--color-dark-gray);
+}
+
+/* ========================================================================== */
+/* LAYOUT HOME ==>> LOGIN */
+/* ========================================================================== */
+.c-login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-login__brand {
+  position: absolute;
+  top: 4.375rem;
+  left: 9.375rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.42625rem;
+  font-weight: var(--font-600);
+  font-size: var(--font-38);
+  color: var(--color-primary-red);
+}
+
+.c-login__container {
+  width: 26.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.375rem;
+  font-weight: var(--font-600);
+}
+
+.c-login__welcome {
+  white-space: nowrap;
+}
+
+.c-login__welcome__title {
+  font-size: var(--font-36);
+  color: var(--color-dark-gray);
+}
+
+.c-login__welcome__text {
+  font-size: var(--font-12);
+  color: var(--color-light-gray);
+}
+
+.c-login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  width: 100%;
+  gap: 1.875rem;
+}
+
+.c-login__form__label-mail {
+  position: relative;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: var(--font-14);
+  color: var(--color-gray);
+}
+
+.c-login__form__label-mail__input {
+  padding: 0.625rem 0.9375rem;
+  background-color: var(--color-input);
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  font-size: var(--font-13);
+  font-family: var(--font-poppins), sans-serif;
+  outline: 0;
+}
+
+.c-login__form__label-mail__input.invalid {
+  border: 1px solid var(--color-yellow);
+  color: var(--color-yellow);
+}
+
+.c-login__form__label-mail__input.valid {
+  border: 1px solid var(--color-green);
+}
+
+.c-login__form__label-password {
+  position: relative;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: var(--font-14);
+  color: var(--color-gray);
+}
+
+.c-login__form__label-password__input {
+  padding: 0.625rem 0.9375rem;
+  background-color: var(--color-input);
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  font-size: var(--font-13);
+  font-family: var(--font-poppins), sans-serif;
+  outline: 0;
+}
+
+.c-login__form__label-password__input.invalid {
+  border: 1px solid var(--color-yellow);
+  color: var(--color-yellow);
+}
+
+.c-login__form__password-options {
+  position: relative;
+  width: 100%;
+  font-weight: var(--font-500);
+  font-size: var(--font-14);
+  color: var(--color-primary-red);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-login__form__password-options__label-check {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 1.08312rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-login__form__password-options__label-check__input {
+  all: unset;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--global-border-radius);
+}
+
+.c-login__form__password-options__label-check__input:checked {
+  border: 1px solid var(--color-primary-red);
+  background-color: var(--color-primary-red);
+}
+
+.c-login__form__password-options__label-check__input::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0.625rem;
+  top: 0.3125rem;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border: solid var(--color-white);
+  border-width: 0 0.1875rem 0.1875rem 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.c-login__form__password-options__label-check:hover {
+  color: var(--color-secundary-red);
+}
+
+.c-login__form__password-options__label-check:hover .c-login__form__password-options__label-check__input {
+  border: 1px solid var(--color-primary-red);
+  background-color: var(--color-primary-red);
+}
+
+.c-login__form__password-options__span-forgot {
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-login__form__password-options__span-forgot:hover {
+  color: var(--color-secundary-red);
+}
+
+.c-login__form__button {
+  position: relative;
+  width: 100%;
+  height: 2.3125rem;
+  font-family: var(--font-poppins);
+  font-weight: var(--font-600);
+  font-size: var(--font-14);
+  color: var(--color-white);
+  border-radius: var(--global-border-radius);
+  border: none;
+  background-color: var(--color-primary-red);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.c-login__form__button:hover {
+  background-color: var(--color-secundary-red);
+}
+
+.c-login__create-account {
+  position: relative;
+  width: 100%;
+  margin: -1.875rem;
+  font-weight: var(--font-500);
+  font-size: var(--font-14);
+  color: var(--color-gray);
+}
+
+.c-login__create-account__link {
+  color: var(--color-primary-red);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-login__create-account__link:hover {
+  color: var(--color-secundary-red);
+}
+
+/* ========================================================================== */
+/* LAYOUT HOME ==>> HOME IMAGE */
+/* ========================================================================== */
+.c-image-home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.c-image-home__img {
+  display: block;
+  width: 100%;
+  min-height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ========================================================================== */
+/* COMPONENT HEADER */
+/* ========================================================================== */
+.c-header {
+  position: relative;
+  width: 100%;
+  height: 7.5rem;
+  -webkit-box-shadow: 0px 2px 25px rgba(169, 169, 169, 0.2);
+          box-shadow: 0px 2px 25px rgba(169, 169, 169, 0.2);
+  padding: 1.9375rem 9.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-header__brand {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.4375rem;
+}
+
+.c-header__brand__name {
+  font-weight: var(--font-600);
+  font-size: var(--font-38);
+  color: var(--color-primary-red);
+}
+
+.c-header__form {
+  width: 26.875rem;
+  height: 2.75rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+          box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  padding: 0.75rem;
+  gap: 0.625rem;
+}
+
+.c-header__form__input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 0;
+}
+
+.c-header__form__icon {
+  font-size: 1.25rem;
+}
+
+.c-header__button {
+  width: 4.6875rem;
+  height: 2.375rem;
+  border: none;
+  border-radius: var(--global-border-radius);
+  background-color: var(--color-primary-red);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.625rem;
+  font-weight: var(--font-600);
+  font-size: var(--font-14);
+  color: var(--color-white);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.c-header__button:hover {
+  background-color: var(--color-secundary-red);
+}
+
+.c-header__button__icon {
+  font-size: var(--font-18);
+}
+
+/* ========================================================================== */
+/* COMPONENT ARTICLE */
+/* ========================================================================== */
+.c-article {
+  position: relative;
+  width: 100%;
+  height: 12.5rem;
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  -webkit-box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+          box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'message  img' 'vehicles img';
+  -ms-grid-columns: auto 16.125rem;
+      grid-template-columns: auto 16.125rem;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  cursor: pointer;
+}
+
+.c-article__message {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: message;
+  padding: 1.25rem;
+}
+
+.c-article__message__title {
+  font-weight: var(--font-600);
+  font-size: var(--font-24);
+  color: var(--color-dark-gray);
+}
+
+.c-article__message__text {
+  font-weight: var(--font-500);
+  font-size: var(--font-18);
+  color: var(--color-gray);
+}
+
+.c-article__vehicles {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: vehicles;
+  font-weight: var(--font-700);
+  font-size: var(--font-13);
+  color: var(--color-primary-red);
+  padding: 1.25rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.c-article__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: img;
+  position: relative;
+  height: 12.4375rem;
+  width: 100%;
+  right: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* ========================================================================== */
+/* COMPONENT WORKSHEET */
+/* ========================================================================== */
+.c-worksheet {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1.5625rem 1.875rem;
+  -webkit-box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+          box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.c-worksheet__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-worksheet__header__title {
+  font-weight: var(--font-600);
+  font-size: var(--font-20);
+  color: var(--color-dark-gray);
+}
+
+.c-worksheet__header__options {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.c-worksheet__header__options__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+  font-weight: var(--font-600);
+  font-size: var(--font-14);
+  color: var(--color-nav-text);
+}
+
+.c-worksheet__header__options__nav__before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.3125rem 0.5rem;
+  border-radius: var(--global-border-radius);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-worksheet__header__options__nav__before__icon {
+  font-size: var(--font-20);
+}
+
+.c-worksheet__header__options__nav__before:hover {
+  background-color: var(--color-nav-background);
+}
+
+.c-worksheet__header__options__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+
+.c-worksheet__header__options__nav__list__item {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: var(--global-border-radius);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-worksheet__header__options__nav__list__item:hover {
+  background-color: var(--color-nav-background);
+}
+
+.c-worksheet__header__options__nav__list__item.focus {
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+}
+
+.c-worksheet__header__options__nav__list__item.focus:hover {
+  background-color: var(--color-secundary-red);
+}
+
+.c-worksheet__header__options__nav__after {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.3125rem 0.5rem;
+  border-radius: var(--global-border-radius);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-worksheet__header__options__nav__after__icon {
+  font-size: var(--font-20);
+}
+
+.c-worksheet__header__options__nav__after:hover {
+  background-color: var(--color-nav-background);
+}
+
+.c-worksheet__header__options__form {
+  width: 12.875rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  -webkit-box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+          box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3125rem 0.625rem;
+}
+
+.c-worksheet__header__options__form__input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 0;
+}
+
+.c-worksheet__header__options__form__icon {
+  font-size: var(--font-20);
+}
+
+.c-worksheet__main {
+  position: relative;
+  width: 100%;
+}
+
+.c-worksheet__main__table {
+  position: relative;
+  width: 100%;
+  font-weight: var(--font-700);
+  font-size: var(--font-13);
+  color: var(--color-gray);
+  border-spacing: 0;
+  text-align: left;
+}
+
+.c-worksheet__main__table__head {
+  background-color: var(--color-input);
+}
+
+.c-worksheet__main__table__head__column {
+  padding: 1.625rem 2.1875rem;
+  position: relative;
+}
+
+.c-worksheet__main__table__body {
+  font-weight: var(--font-500);
+  font-size: var(--font-16);
+  color: var(--color-dark-gray);
+}
+
+.c-worksheet__main__table__body__column {
+  padding: 1.625rem 2.1875rem;
+  position: relative;
+}
+
+/* ========================================================================== */
+/* COMPONENT WORKSHEET'S EMPLOYEES */
+/* ========================================================================== */
+.c-worksheet-employees {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1.5625rem 1.875rem;
+  -webkit-box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+          box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.c-worksheet-employees__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-worksheet-employees__header__title {
+  font-weight: var(--font-600);
+  font-size: var(--font-20);
+  color: var(--color-dark-gray);
+}
+
+.c-worksheet-employees__header__options {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.c-worksheet-employees__header__options__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+  font-weight: var(--font-600);
+  font-size: var(--font-14);
+  color: var(--color-nav-text);
+}
+
+.c-worksheet-employees__header__options__nav__before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.3125rem 0.5rem;
+  border-radius: var(--global-border-radius);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-worksheet-employees__header__options__nav__before__icon {
+  font-size: var(--font-20);
+}
+
+.c-worksheet-employees__header__options__nav__before:hover {
+  background-color: var(--color-nav-background);
+}
+
+.c-worksheet-employees__header__options__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+
+.c-worksheet-employees__header__options__nav__list__item {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: var(--global-border-radius);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-worksheet-employees__header__options__nav__list__item:hover {
+  background-color: var(--color-nav-background);
+}
+
+.c-worksheet-employees__header__options__nav__list__item.focus {
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+}
+
+.c-worksheet-employees__header__options__nav__list__item.focus:hover {
+  background-color: var(--color-secundary-red);
+}
+
+.c-worksheet-employees__header__options__nav__after {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.3125rem 0.5rem;
+  border-radius: var(--global-border-radius);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c-worksheet-employees__header__options__nav__after__icon {
+  font-size: var(--font-20);
+}
+
+.c-worksheet-employees__header__options__nav__after:hover {
+  background-color: var(--color-nav-background);
+}
+
+.c-worksheet-employees__header__options__form {
+  width: 12.875rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-stroke);
+  border-radius: var(--global-border-radius);
+  -webkit-box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+          box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3125rem 0.625rem;
+}
+
+.c-worksheet-employees__header__options__form__input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 0;
+}
+
+.c-worksheet-employees__header__options__form__icon {
+  font-size: var(--font-20);
+}
+
+.c-worksheet-employees__main {
+  position: relative;
+  width: 100%;
+}
+
+.c-worksheet-employees__main__table {
+  position: relative;
+  width: 100%;
+  font-weight: var(--font-700);
+  font-size: var(--font-13);
+  color: var(--color-gray);
+  border-spacing: 0;
+  text-align: left;
+}
+
+.c-worksheet-employees__main__table__head {
+  background-color: var(--color-input);
+}
+
+.c-worksheet-employees__main__table__head__column {
+  padding: 1.625rem 2.1875rem;
+  position: relative;
+}
+
+.c-worksheet-employees__main__table__body {
+  font-weight: var(--font-500);
+  font-size: var(--font-16);
+  color: var(--color-dark-gray);
+}
+
+.c-worksheet-employees__main__table__body__column {
+  padding: 1.625rem 2.1875rem;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,4 @@
+//FUNCÇÃO PARA CONVERTER PX PARA REM
+@function rem($value){
+    @return $value / 16 + rem;
+}

@@ -1,0 +1,257 @@
+/* ========================================================================== */
+/* LAYOUT HOME ==>> LOGIN */
+/* ========================================================================== */
+
+$layout-name: "c-login";
+
+.#{$layout-name}{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__brand{
+        position: absolute;
+        top: rem(70);
+        left: rem(150);
+
+        display: inline-flex;
+        justify-content: center;
+
+        gap: rem(22.82);
+
+        font-weight: var(--font-600);
+        font-size: var(--font-38);
+        color: var(--color-primary-red);
+    }
+
+    &__container{
+        width: rem(425);
+
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+        flex-direction: column;
+        
+        gap: rem(70);    
+        
+        font-weight: var(--font-600);
+    }
+
+    &__welcome{
+        white-space: nowrap;
+                
+        &__title{
+            font-size: var(--font-36);
+            color: var(--color-dark-gray);
+        }
+
+        &__text{
+            font-size: var(--font-12);
+            color: var(--color-light-gray);
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: flex-start;
+        
+        position: relative;
+        width: 100%;    
+        
+        gap: rem(30);
+
+        &__label-mail{
+            position: relative;
+            width: 100%;
+
+            display: inline-flex;
+            flex-direction: column;
+            
+            font-size: var(--font-14);
+            color: var(--color-gray);            
+
+            &__input{
+                padding: rem(10) rem(15);
+
+                background-color: var(--color-input);
+
+                border: 1px solid var(--color-stroke);
+                border-radius: var(--global-border-radius);
+
+                font-size: var(--font-13);
+                font-family: var(--font-poppins), sans-serif;
+
+                outline: 0;                
+            }
+
+            &__input.invalid{
+                border: 1px solid var(--color-yellow);
+                color: var(--color-yellow);                
+            }
+
+            &__input.valid{
+                border: 1px solid var(--color-green);
+            }
+        }
+
+        &__label-password{
+            position: relative;
+            width: 100%;
+
+            display: inline-flex;
+            flex-direction: column;
+            
+            font-size: var(--font-14);
+            color: var(--color-gray);
+
+            &__input{
+                padding: rem(10) rem(15);
+
+                background-color: var(--color-input);
+
+                border: 1px solid var(--color-stroke);
+                border-radius: var(--global-border-radius);
+
+                font-size: var(--font-13);
+                font-family: var(--font-poppins), sans-serif;
+
+                outline: 0;
+            }
+
+            &__input.invalid{
+                border: 1px solid var(--color-yellow);
+                color: var(--color-yellow);
+            }
+
+        }
+
+        &__password-options{
+            position: relative;
+            width: 100%;
+
+            font-weight: var(--font-500);
+            font-size: var(--font-14);
+            color: var(--color-primary-red);
+
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__label-check{
+                display: inline-flex;
+                gap: rem(17.33);
+                align-items: center;
+
+                cursor: pointer;
+
+                transition: all 0.2s linear;
+
+                &__input{             
+                    all: unset;
+                    
+                    width: rem(24);
+                    height: rem(24);
+
+                    background-color: var(--color-white);
+                    border: 1px solid var(--color-light-gray);
+                    border-radius: var(--global-border-radius);
+                    
+                    &:checked{
+                        border: 1px solid var(--color-primary-red);
+                        background-color: var(--color-primary-red);
+                    }
+
+                    &::after{
+                        display: block;
+
+                        content: '';
+                        
+                        position: absolute;
+                        left: rem(10);
+                        top: rem(5);
+                        width: rem(5);
+                        height: rem(10);
+                        border: solid var(--color-white);
+                        border-width: 0 rem(3) rem(3) 0;
+
+                        transform: rotate(45deg);
+                    }
+                }
+
+                &:hover{
+                    color: var(--color-secundary-red);
+                }
+
+                &:hover &__input{
+                    border: 1px solid var(--color-primary-red);
+                    background-color: var(--color-primary-red);
+                }
+                
+            }
+
+            &__span-forgot{
+                cursor: pointer;
+                transition: all 0.2s linear;
+
+                &:hover{
+                    color: var(--color-secundary-red);
+                }
+            }
+        }
+
+        &__button{
+            position: relative;
+            width: 100%;
+            height: rem(37);
+
+            font-family: var(--font-poppins);
+            font-weight: var(--font-600);
+            font-size: var(--font-14);
+
+            color: var(--color-white);
+
+            border-radius: var(--global-border-radius);
+            border: none;
+
+            background-color: var(--color-primary-red);
+
+            transition: all 0.2s linear;
+
+            cursor: pointer;
+
+            &:hover{
+                background-color: var(--color-secundary-red);
+            }            
+        }    
+    }
+
+    &__create-account{
+        position: relative;
+        width: 100%;
+
+        margin: rem(-30);
+
+        font-weight: var(--font-500);
+        font-size: var(--font-14);
+
+        color: var(--color-gray);   
+
+        &__link{
+            color: var(--color-primary-red);
+            transition: all 0.2s linear;
+
+            &:hover{
+                color: var(--color-secundary-red);
+            }
+        }
+    }
+
+
+
+}

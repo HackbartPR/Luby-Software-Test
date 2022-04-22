@@ -1,0 +1,73 @@
+/* ========================================================================== */
+/* COMPONENT ARTICLE */
+/* ========================================================================== */
+
+$component-name: "c-article";
+
+.#{$component-name}{
+    position: relative;
+    width: 100%;
+    height: rem(200);
+
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--global-border-radius);
+
+    box-shadow: 0px 0px 6px rgba(162, 162, 162, 0.25);
+    
+    display: grid;
+    grid-template-areas: 'message  img'
+                         'vehicles img';
+    grid-template-columns: auto rem(258);
+    grid-template-rows: 2fr 1fr;
+
+    cursor: pointer;
+            
+    &__message{
+        grid-area: message;
+        
+        padding: rem(20);
+
+        &__title{
+            font-weight: var(--font-600);
+            font-size: var(--font-24);
+
+            color: var(--color-dark-gray);
+        }
+
+        &__text{
+            font-weight: var(--font-500);
+            font-size: var(--font-18);
+
+            color: var(--color-gray);
+        }
+    }
+
+    &__vehicles{
+        grid-area: vehicles; 
+
+        font-weight: var(--font-700);
+        font-size: var(--font-13);
+        
+        color: var(--color-primary-red);
+
+        padding: rem(20);
+
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    &__image{
+        grid-area: img;
+        
+        position: relative;
+        height: rem(199);
+        width: 100%;
+        right: 0;
+
+        display: inline-flex;
+        justify-content: flex-end;
+
+        object-fit: contain;
+    }       
+}

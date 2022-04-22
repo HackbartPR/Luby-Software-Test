@@ -1,0 +1,57 @@
+//VARIAVEIS DE CORES
+$application-color: (
+    "white":          #ffffff,
+    "light-gray":     #A2A2A2,
+    "gray":           #7C7C7C,
+    "dark-gray":      #3C3C3C,
+    "background":     #E5E5E5,
+    "primary-red":    #F54A48,
+    "secundary-red":  #DF3938,
+    "stroke":         #E6E6E6,
+    "green":          #34C38F,
+    "yellow":         #FA982F,
+    "input":          #F9F9F9,
+    "nav-background": #EDEDED,
+    "nav-text":       #858585,  
+);
+
+//VARIÁVEIS GLOBAIS
+$application-metrics: (
+    "border-radius": rem(3),
+);
+
+//VARIÁVEIS FORÇA DA FONTE
+$application-font-weight: (
+    "300": 300,
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700": 700,
+);
+
+//VARIÁVEIS TAMANHO DA FONTE
+$application-font-size: (
+    "11": rem(11),
+    "12": rem(12),
+    "13": rem(13),    
+    "14": rem(14),
+    "16": rem(16),
+    "18": rem(18),
+    "20": rem(20),
+    "24": rem(24),
+    "26": rem(26),
+    "30": rem(30),
+    "32": rem(32),
+    "36": rem(36),
+    "38": rem(38),
+);
+
+//VARIÁVEIS FAMILIA DA FONTE
+$application-font-family: (
+    'poppins': 'Poppins',
+)
+
+
+
+
+
