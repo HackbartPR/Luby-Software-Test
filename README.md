@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Testes da Luby Software
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Este diretório é dedicado para a entrega dos exercícios propostos pela empresa Luby Software como método de avaliação.</p>
 
-## Available Scripts
+<p>Encontram-se aqui duas pastas, sendo a <i>'AutoLuby Test'</i> o exercício da criação do site seguindo todas as solicitações feitas e a pasta <i>'Exercícios de Lógica'</i>, a qual contém os 10 exercícios de lógica propostos.
 
-In the project directory, you can run:
+## AutoLuby Test
+  
+### Sobre
+<p> Esta aplicação consiste em um sistema de gerenciamento de uma concessionária de veículos. O qual é necessário realizar um login para ter acesso ao sistema.</p>
+<p> Após a realização do login, é possível ter acesso ao todos os carros vendidos ou reservados do usuário logado; ter acesso a todos os carros da empresa, juntamente com suas características e status e ainda é possível visualizar todos os funcionários da empresa.</p>
 
-### `npm start`
+### Informações Técnicas
+<p> Para gerenciar todas as informações recebidas da API, inclusive as informações do usuário, foi utilizado o <b>useContext</b> da biblioteca React </p>
+<p> Para realizar o acesso a API fornecida, foi utilizada a biblioteca <b>Axios</b>. </p>
+<p> Para a criação de todos os componentes que possuíam links e os status dos veículos, foi utilizada a biblioteca <b>Styled-Component</b>. </p>
+<p> Para realizar a validação dos campos de email e senha na página de login, foi utilizado a biblioteca <b>Yup</b>. </p>
+<p> Para a estilização de todas as páginas, foi utilizado o <b>Sass</b>. Este permitiu uma melhor organização dos componentes e na padronização de cores, tamanhos... </p>
+<p> O Projeto foi inteiramento desenvolvido em <b>Typescript</b>.</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Observações
+<p> Para o correto funcionamento do projeto, deve-se instalar as seguintes bibliotecas </p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<ul>
+  <li><a href='https://v5.reactrouter.com/web/guides/quick-start'>React Router Dom</a></li>
+  <li><a href='https://sass-lang.com/install'>Sass</a></li>
+  <li><a href='https://styled-components.com/'>Styled Component</a></li>
+  <li><a href='https://axios-http.com/docs/intro/'>Axios</a></li>
+  <li><a href='https://www.npmjs.com/package/yup'>Yup</a></li>
+</ul>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
