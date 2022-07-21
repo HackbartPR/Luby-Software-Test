@@ -1,5 +1,7 @@
 # Testes da Luby Software
 
+![1650730269872](https://user-images.githubusercontent.com/95001642/180312573-5585b8ed-576b-4e32-b8f3-1efb7b7bd9af.gif)
+
 <p>Este diretório é dedicado para a entrega dos exercícios propostos pela empresa Luby Software como método de avaliação.</p>
 
 <p>Encontram-se aqui duas pastas, sendo a <i>'AutoLuby Test'</i> o exercício da criação do site seguindo todas as solicitações feitas e a pasta <i>'Exercícios de Lógica'</i>, a qual contém os 10 exercícios de lógica propostos.
